@@ -1,0 +1,505 @@
+@media screen and (min-width: 800px){
+
+    ul {    
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        
+    }
+    
+    
+        li a {
+            font-size: 25px;
+            text-decoration: none;
+            text-align: left;
+          }
+
+          li a:hover {
+            background-color: rgb(205, 238, 247);
+            color: midnightblue;
+          }
+
+@media (prefers-reduced-motion) {
+  .avatar{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important; 
+    transition-duration: 0.001ms !important;   
+    animation: none;
+  }
+  .header{
+    background-attachment: scroll;
+  }
+
+  .flip-card-inner{
+    animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+  }
+
+  flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+}
+
+.flip-card-back{
+  animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+}
+        } 
+
+.gridsoulcycle{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  height: auto;
+  width: auto;
+}
+
+.misc text-block{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+@media screen and (min-width: 850px){
+
+    ul {        
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+        li a {
+            text-align: left;
+            text-decoration: none;
+          }
+
+          li a:hover {
+            background-color: rgb(205, 238, 247);
+            color: midnightblue;
+          }
+
+.gridsoulcycle{
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+}
+
+.misc text-block{
+    display: flex;
+    justify-content: center;
+}
+
+
+}
+
+
+body{
+	margin:1%;
+	padding:1%;
+    font-size:150%;
+    background-image: url("../images/finalcanva.JPEG");
+    background-color: rgb(255, 176, 189) ;
+    background-repeat:no-repeat;
+    background-size: cover ;
+    background-position: center;
+}
+
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 55px; 
+    font-weight: bold;
+    color: rgb(99, 0, 69);
+    webkit-text-stroke: 1px white;
+   text-shadow:
+       3px 3px 0 rgb(255, 255, 255),
+     -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
+    
+}
+
+h3{
+    font-size: 27px; 
+    font-weight: bold;
+    color: rgb(99, 0, 69);
+}
+
+h4{
+    font-size: 20px; 
+    color: rgb(99, 0, 69);
+}
+
+/*Style the images*/
+img{
+    height: 200px;
+    width:auto;
+    border: 3px solid midnightblue;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 40px; 
+    font-weight: bold;
+    color: midnightblue;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+
+/*Add borders around the main components and some
+space too*/
+
+header{
+  /*parallax header*/
+    font-size: 18px;
+    margin: 10px 0;
+    height: 80vh;
+    background-color: white;
+    background-image: url("../images/header.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    vertical-align: top;
+    transform-origin: center top;
+    object-fit: fill;
+  }
+
+
+
+
+main{
+    font-family: "optima";
+	border: 1px solid midnightblue;
+    margin: 10px 0;
+}
+
+h1{
+    font-family: "optima";
+    margin: 10px 0;
+}
+
+nav{
+    font-family: "optima";
+    margin: 10px 0;
+    
+}
+
+footer{
+    font-family: "optima";
+	border: 1px solid midnightblue;
+    margin: 10px 0;
+    background-color: rgb(250, 227, 231);  
+}
+
+.social{
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	padding:10px;
+	width:19%;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+nav .current{
+    background-color: lightcyan;
+    font-weight: bold;
+    font-size: 150%;
+
+
+}
+
+
+
+a{
+    font-size: 20px;
+    text-decoration:none;
+    background-color: white;
+   
+      
+}
+/*Added this so the links stay the same color*/
+a:visited{color:midnightblue}
+
+a:hover{
+    background-color: #e7f6fa;
+  }
+
+/*food page gallery flex*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+.gallery > img{
+    width: auto;
+    border-style: solid;
+    border-color: midnightblue;
+    border-width: 3px;
+    padding: 5px;
+    margin: 10px;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+  *:focus{
+    border: 2px solid black;
+  }
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  align-items: start;
+  justify-items: center;
+  
+  }
+.grid img {
+border: 1px solid rgba(0,0,0,0.3);
+padding: 0;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.grid img:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 2;
+  }
+
+  .grid2 { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    }
+  .grid2 img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    align-items: center;
+  }
+
+  span{
+    background: rgb(99, 0, 69);
+    border: 5px solid midnightblue;
+    color:white;
+    font-family: "optima";
+    font-size: 13px;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    display:none;
+    padding:0 20px;
+    
+}
+span:after{
+    content:'';
+    position:absolute;
+    bottom:-10px; 
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #f5ebf1;
+    border-right:5px solid #f5ebf1;
+    background:#f5ebf1;
+    left:50%;
+    margin-left:-10px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+
+h2:hover span{
+    display:block;
+}
+
+.collapsible {
+    background-color:midnightblue;
+    font-family: "optima";
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline:rgb(99, 0, 69);
+  }
+
+  
+  .active, .collapsible:hover {
+    background-color:rgb(99, 0, 69);
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(255, 231, 234);
+  }
+
+  .gridgolf{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridgolf img{
+  border: 1px solid midnightblue;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+.animationcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.avatar img{
+  height: 170px;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+ 
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.flip-card img{
+  align-content: center;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: none;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:none;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(33, 74, 253);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+

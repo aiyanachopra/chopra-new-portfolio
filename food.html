@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/heart.png"/>
+    <title>Aiyana's Food</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9HHFNMKGPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9HHFNMKGPH');
+</script>
+  </head>
+  <body>
+    <a class = "skip" href="#photos">Skip to Main Content</a>
+    
+
+    <main class="container">
+
+<header>
+  <h1>Aiyana's Healthy Food Blog</h1>
+    <nav class="flexbox">    
+      
+          <ul>
+              <li><a href = "index.html">About Me</a></li>
+              <li><a href = "work.html">Professional Work</a></li>
+              <li><a href = "hobbies.html">Aiyana's Lifestyle</a></li>
+              <li><a class = "current" href = "food.html">Food Blog</a></li>
+          </ul>
+      </nav>
+
+      <a id="photos"></a>
+      
+
+
+
+  </header>
+  <h2 id = "gallery">Ann Arbor Eats</h2>
+        <div class="gallery"> 
+            
+          <img id="image1" src="images/savas.JPEG" alt="savas chicken dish" />
+          <img id="image2" src="images/wholefood.JPEG" alt="whole foods grocery cart" />
+          <img id="image3" src="images/harvestbowl.JPEG" alt="harvest bowl with quinoa and cranberries" />
+          <img id="image4" src="images/smoothie.JPEG" alt="tropical smoothie pumpkin flavored" />
+          <img id="image5" src="images/granola.JPEG" alt="granola yogurt bowl" />
+          <img id="image6" src="images/coffee.JPEG" alt="coffee from avalon cafe and roastery" />
+          <img id="image7" src="images/dsfilling.JPEG" alt="meal from detriot street filling restaurant" />
+          <img id="image8" src="images/yougurtbowl.JPEG" alt="greek yogurt bowl with fruits on top" />
+          <img id="image9" src="images/chicken.JPEG" alt="chicekn from savas with side salad" />
+          <img id="image10" src="images/fruitstand.JPEG" alt="fruit stand at grocery store" />
+        </div>
+  
+</main>
+
+<!-- JavaScript user Input -->
+
+
+<h3>Click the button below to enter your favorite Ann Arbor food or restaurant! </h3>
+<div class="button"> <button onclick="myFunction()">Click Here</button> </div>
+<p id="foodinput"></p>
+<script>
+function myFunction() {
+  var food = prompt("Please enter food name here: ", " ");
+  if (food != null) {
+    document.getElementById("foodinput").innerHTML =
+    "Your favorite Ann Arbor food is " + food + "! Great Choice :)";
+  }
+}
+</script>
+
+
+<footer>
+    
+  <h3>Contact Me!</h3>
+  <form
+action="https://formspree.io/f/xnqlewzv"
+method="POST"
+>
+<label>
+  Email:
+  <input type="email" name="_replyto">
+</label>
+<label>
+  Message:
+  <input name="message">
+</label>
+<!-- your other form fields go here -->
+<button type="submit">Send</button>
+</form>
+<br>
+<div class="footer">
+<p>&copy 2021 - Aiyana Chopra</p>
+<p>School of Information - SI 339</p>
+</div>
+<br>
+</footer>
+</body>
+  </html>
